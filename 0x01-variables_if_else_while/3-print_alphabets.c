@@ -1,22 +1,29 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - Entyr point
+ * main - Entry point
  * Description: prints a combination of two digits
- * Return: returns zero for a success
+ * Return: zero for success
  */
 int main(void)
 {
-	int ch;
+	int x, y;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (x = '0'; x <= '9'; x++)
 	{
-		for (c = 'A'; c <= 'Z'; c++)
+		for (y = '0'; y <= '9'; y++)
 		{
-			putchar(ch);
-			putchar(c);
+			if (x < y)
+			{
+				putchar(x, y);
+
+				if (x != '8' || (x == '8' && y != '9'))
+				{
+					putchar(',', ' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
-return (0);
+	return (0);
 }
