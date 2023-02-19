@@ -15,8 +15,8 @@ int main(void)
 		{
 			if (x < y)
 			{
-				putchar(x);
-				putchar(y);
+				putchar(x, '\n');
+				putchar(y, '\n');
 
 				if (x != '8' || (x == '8' && y != '9'))
 				{
@@ -25,6 +25,5 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
-	return (0);
+return (0);
 }
