@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-  *main - where entry point begins
-  * description - checks the last digit of the var
-  *Return - 0 if success
+  *main - Entry point
+  *Description: Prints the last digit stored in a variable
+  *Return: Returns zero for a success
  */
 int main(void)
 {
