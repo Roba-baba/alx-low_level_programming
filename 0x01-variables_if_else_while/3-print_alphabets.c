@@ -15,7 +15,8 @@ int main(void)
 		{
 			if (k < i)
 			{
-				putchar(k, i);
+				putchar(k);
+				putchar(i);
 
 				if (k != '8' || (k == '8' && i != '9'))
 				{
