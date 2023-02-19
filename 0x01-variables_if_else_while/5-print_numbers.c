@@ -5,7 +5,7 @@
  * Description: prints single digits 
  * base 10 from 0
  * Return: Zero if success
- */
+*/
 int main(void)
 {
 	int a;
