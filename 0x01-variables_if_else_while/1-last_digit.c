@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-  *checks the last digit
-  *returns a sucess)
+  *main - where entry point begins
+  * description - checks the last digit of the var
+  *Return - 0 if success
  */
 int main(void)
 {
