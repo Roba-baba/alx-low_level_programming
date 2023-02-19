@@ -2,28 +2,29 @@
 #include <unistd.h>
 /**
  * main - Entry point
- * Description: prints a combination of two digits
- * Return: zero for success
+ * Description: prints a combination of two digits 
+ * Return: Returns zero for a success
  */
 int main(void)
 {
-	int x, y;
+	int k, i;
 
-	for (x = '0'; x <= '9'; x++)
+	for (k = '0'; k <= '9'; k++)
 	{
-		for (y = '0'; y <= '9'; y++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			if (x < y)
+			if (k < i)
 			{
-				putchar(x, '\n');
-				putchar(y, '\n');
+				putchar(k, i);
 
-				if (x != '8' || (x == '8' && y != '9'))
+				if (k != '8' || (k == '8' && i != '9'))
 				{
 					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
-return (0);
+	putchar('\n');
+	return (0);
 }
