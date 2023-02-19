@@ -2,8 +2,8 @@
 #include <unistd.h>
 /**
  * main - Entry point
- * Description - returns lower case letters in alphabetical order
- * Return - o to mean a succes
+ * Description: returns lower case letters in alphabetical order
+ * Return: returns zero to mean a success
 */
 int main(void)
 {
