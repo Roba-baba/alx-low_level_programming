@@ -7,25 +7,16 @@
  */
 int main(void)
 {
-	int a, x;
+	int ch;
 
-	for (a = '0'; a <= '9'; a++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		for (x = '0'; x <= '9'; x++)
+		for (c = 'A'; c <= 'Z'; c++)
 		{
-			if (a < x)
-			{
-				putchar(a);
-				putchar(x);
-
-				if (a != '8' || (a == '8' && x != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			putchar(ch);
+			putchar(c);
 		}
 	}
 	putchar('\n');
-	return (0);
+return (0);
 }
