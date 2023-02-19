@@ -1,22 +1,31 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - Entry point
- * Description: Prints alphabets in lower case then upper case
- * Return: returns zero when successful
-*/
-
+ * main - Entyr point
+ * Description: prints a combination of two digits
+ * Return: returns zero for a success
+ */
 int main(void)
 {
-	int ch;
-	for (ch = 'a'; ch = 'z'; ch++);
+	int a, x;
+
+	for (a = '0'; a <= '9'; a++)
 	{
-		putchar(ch);
+		for (x = '0'; x <= '9'; x++)
+		{
+			if (a < x)
+			{
+				putchar(a);
+				putchar(x);
+
+				if (a != '8' || (a == '8' && x != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
 	}
-	for (ch = 'A'; ch = 'Z'; ch++);
-	{
-		putchar(ch);
-	}
-	putchar('\n\);
-return(0)
-} 
+	putchar('\n');
+	return (0);
+}
