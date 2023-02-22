@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * Main will print _putchar
- * Return is always zero
+ * Main: will print _putchar
+ * Description: the code prints _putchar including underscore
+ * Return: Always return zero if successful
  * 
  */
 
@@ -18,6 +19,6 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 
-	return (0);
+	return(0);
 }
 
