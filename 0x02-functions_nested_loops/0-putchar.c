@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	_putchar(95);
+	_putchar(95);/*ASCI value for _ is 95*/
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
@@ -19,4 +19,3 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
-
