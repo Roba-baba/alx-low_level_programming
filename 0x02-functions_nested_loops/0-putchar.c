@@ -1,13 +1,23 @@
-#include <unistd.h>
-
+#include <main.h>
 
 /**
- * _putchar returns character c as an output
- * c is the character that is printed
- * return is successful if 0 is returned
+ * Main will print _putchar
+ * Return is always zero
+ * 
  */
 
-int _putchar(char c)
+int main(void)
 {
-	return(write(1, &c, 1));
-} 
+	_putchar(95);
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
+	return (0);
+}
+
