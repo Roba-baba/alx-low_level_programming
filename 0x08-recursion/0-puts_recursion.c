@@ -1,11 +1,20 @@
 #include "main.h"
 
-/**_puts_recursion will print a string
- * it will end in a new line
- * @s: prints string
+/**
+ * _puts_recursion - function declaration
+ * @s: the string
  */
 
 void _puts_recursion(char *s);
+
+/**
+ * _puts_recursion - function definition
+ * @s: string to recurse
+ * Description: recursion that returns a string s
+ * Return: void
+ */
+
+void _puts_recursion(char *s)
 {
 	if (*s)
 	{
@@ -14,7 +23,6 @@ void _puts_recursion(char *s);
 	}
 	else
 	{
-		_putchar(\n);
+		_putchar('\n');
 	}
 }
-
