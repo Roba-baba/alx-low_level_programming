@@ -1,25 +1,17 @@
 #include "main.h"
 
 /**
- * _puts_recursion - function declaration
- * @s: the string
- */
-
-void _puts_recursion(char *s);
-
-/**
- * _puts_recursion - function definition
- * @s: string to recurse
- * Description: recursion that returns a string s
+ * _puts_recursion - Prints a string, followed by a new line
+ * @s: The string to be printed
+ *
  * Return: void
  */
-
 void _puts_recursion(char *s)
 {
 	if (*s)
 	{
 		_putchar(*s);
-		_puts_recursion(++s);
+		_puts_recursion(s + 1);
 	}
 	else
 	{
