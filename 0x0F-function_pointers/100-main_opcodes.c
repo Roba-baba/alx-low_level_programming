@@ -2,18 +2,14 @@
 #include <stdlib.h>
 
 /**
- * main - is a program that prints the opcodes.
+ * main - program that prints opcodes.
  *
- * @argc: is arguments that are supplied to the program.
+ * @argc: number of arguments supplied to the program.
  *
  * @argv: array of pointers to the arguments.
  *
- * Return: always 0.
- *
- * By: Roba-guru.
- *
+ * Return: 0.
  */
-
 int main(int argc, char *argv[])
 {
 	int k, j;
