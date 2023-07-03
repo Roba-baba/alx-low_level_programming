@@ -1,47 +1,48 @@
 #include "main.h"
-#define NULL 0
 
 /**
- * _strstr - locate and return pointer to first occurence of substring
- * @haystack: string to search
- * @needle: target substring to search for
- * Return: pointer to index of string at first occurence of whole substring
+ * *_strstr - function declaration
+ * @haystack: the string to be searched
+ * @needle: the substring
+ * Return: string or NULL
+ */
+
+char *_strstr(char *haystack, char *needle);
+
+/**
+ * *_strstr - function definition
+ * @haystack: that string that will be searched
+ * @needle: the substring to search for
+ * Description: search for needle in haystack
+ * Return: string or NULL
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0;
-	int j, x;
+	int hay_index;
+	int needle_index;
 
 	if (needle[0] == '\0')
 	{
 		return (haystack);
 	}
 
-	while (haystack[i] != '\0')
+	for (hay_index = 0; haystack[hay_index] != '\0'; hay_index++)
 	{
-		if (haystack[i] == needle[0])
+		if (haystack[hay_index] == needle[0])
 		{
-			x = i;
-			j = 0;
-
-			while (needle[j] != '\0')
+			for (needle_index = 0; needle[needle_index] != '\0'; needle_index++)
 			{
-				if (haystack[x] == needle[j])
-				{
-					x++, j++;
-				}
-				else
+				if (haystack[hay_index + needle_index] != needle[needle_index])
 				{
 					break;
 				}
 			}
-			if (needle[j] == '\0')
+			if (needle[needle_index] == '\0')
 			{
-				return (haystack + i);
+				return (haystack + hay_index);
 			}
 		}
-		i++;
 	}
-	return (NULL);
+	return ('\0');
 }
