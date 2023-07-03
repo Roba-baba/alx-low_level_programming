@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
+/**
  * add_node - is used to add a node.
  *
  * @head: dereferenced head address.

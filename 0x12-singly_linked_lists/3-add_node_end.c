@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
+/**
  * add_node_end - used to add a tail node.
  *
  * @head: the head of the node.

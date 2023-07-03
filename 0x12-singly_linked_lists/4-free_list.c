@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*
+/**
  * free_list - used to free a lists.
  *
  * @head: head of list to be freed.
