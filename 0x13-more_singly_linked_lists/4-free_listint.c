@@ -1,22 +1,21 @@
 #include "lists.h"
 
 /**
- * free_listint - is used in freeing a list.
- *
- * @head: is the struct head.
- *
+ * free_listint - frees a listint_t list
+ * @head: head of linked list
  */
 
 void free_listint(listint_t *head)
 {
-	listint_t *tmp;
+	listint_t *current;
+	listint_t *next;
 
+	current = head;
 
-	while (head != NULL)
+	while (current != NULL)
 	{
-		tmp = head;
-		free(head);
-		head = tmp->next;
+		next = current->next;
+		free(current);
+		current = next;
 	}
-
 }

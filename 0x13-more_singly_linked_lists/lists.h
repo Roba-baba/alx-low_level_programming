@@ -8,13 +8,14 @@
 int _putchar(char c);
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
+ * struct list_s - is a singly linked list.
  *
- * Description: singly linked list node structure
- * for Holberton project
+ * @str: string.
+ *
+ * @len: is the length of the string.
+ *
+ * @next: points to the next node.
+ *
  */
 
 typedef struct list_s
@@ -25,12 +26,13 @@ typedef struct list_s
 } list_t;
 
 /**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
+ * struct listint_s - singly linked list.
  *
- * Description: singly linked list node structure
- * for Holberton project
+ * @n: and integer.
+ *
+ * @next: it points to the next node.
+ *
+ * Description: singly linked list node structure.
  */
 
 typedef struct listint_s
